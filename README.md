@@ -89,6 +89,17 @@ Adaptive SMAPE (approx):
 - Rolling-Naive: ~28.1%
 - Rolling-XGBoost: ~25.7%
 
+The experimental results show that adaptive models, especially the Rolling-XGBoost approach, achieved superior performance in scenarios with concept drift. By continuously retraining the model using recent data (rolling window strategy), the solution maintained lower forecasting errors over time compared to static models.
+
+From a business perspective, this brings several direct benefits:
+
+• Greater forecast accuracy in dynamic environments, where demand patterns change due to seasonality, promotions or market shifts.
+• Reduced risk of stockouts and overstock, improving inventory balance and operational efficiency.
+• Faster adaptation to behavioral changes, minimizing financial losses caused by outdated models.
+• More reliable demand signals to support planning, procurement and logistics decisions.
+
+Although the project was developed in an analytical environment, the proposed architecture can be extended to a production-ready pipeline, including automated data ingestion, periodic retraining, forecast generation and dashboard integration for decision-makers. Combined with model versioning and monitoring practices, this approach supports governance, traceability and long-term model sustainability.
+
 
 
 
